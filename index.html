@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post it</title>
+
+    <style>
+        /* CONTAINER MAIN#container */
+        #container {
+            width: 300px;
+            height: 400px;
+            float: left; 
+            margin-top: 100px;
+        }
+
+        /* CONTAINERS GENERALES AZUL I ROJO */
+        #blue, #red {
+            background-color: blue;
+            width: 300px;
+            height: 600px; 
+            float: right;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        /* Cambio de color por div propio */
+        #blue {
+            background-color: blue;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        /* BOTONES */
+        #container div.red button, #container div.blue button{
+            float: right;
+            width: 18px;
+            justify-content: center;
+        
+        }
+
+        /* DIVS PEQUEÑOS/POST-ITS */
+        .red {
+            background-color: crimson;
+            max-width: 170px;
+            max-height: 200px;
+            text-align: center;
+        }
+
+        .blue {
+            background-color:cadetblue;
+            max-width: 170px;
+            max-height: 200px;
+            text-align: center;
+        }    
+
+        .red, .blue {
+            width: 100px;
+            height: 150px;
+            border: 1px solid antiquewhite;
+        }
+
+        
+        /* INPUTS + TEXTAREA */
+        input {
+            width: 80%;
+            height: 10%;
+            margin-bottom: 10px;
+            background-color: blanchedalmond;
+        }
+
+        textarea {
+            width: 80%;
+            height: 50%;
+            background-color:burlywood;
+        }       
+    </style>
+</head>
+<body>
+
+    <button id="crearPostits">Crear Post-its</button>
+
+    <div id="container"></div>
+
+
+    <div id="blue"><h2> Counter:  <b id="counterBlue">0</b></h2></div>
+    <div id="red"><h2> Counter:  <b id="counterRed">0</b></h2></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
